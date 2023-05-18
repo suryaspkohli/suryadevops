@@ -1,0 +1,15 @@
+#!/bin/bash
+PATH='/Kafka-Data/kafka-files'
+DIR='//Kafka-Data'
+#/usr/bin/su - kafka
+cd $DIR
+/usr/bin/rm -rf kafka-files
+if [ -d "$PATH" ]
+then
+echo "'kafka-files' FOLDER IS PRESENT"
+else
+echo "'kafka-files' FOLDER IS GOING TO CREATE"
+/usr/bin/mkdir kafka-files
+fi
+exit
+
