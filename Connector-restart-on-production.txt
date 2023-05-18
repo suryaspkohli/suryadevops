@@ -1,0 +1,15 @@
+1- curl -X DELETE http://172.31.27.113:8083/connectors/live-scada-connector
+
+2- kill -9 process-id ( connect-dist ).
+
+3- Go on browser for access http://13.127.115.148:7000 and delete three topics
+
+Topics Name:- live-connect-configs , Live-connect-offsets, Live-connect-status
+
+4- cd /Kafka-Data/kafka-live
+
+nohup bin/connect-distributed.sh config/connect-distributed.properties &
+
+5- curl -d @connector.json  -H "Content-Type: application/json"  -X POST http://172.31.27.113:8083/connectors
+
+6- tail -f /Kafka-Data/kafka-live/logs/connector.log
