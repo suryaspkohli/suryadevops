@@ -1,0 +1,262 @@
+
+
+
+GRANT ALL PRIVILEGES ON *.* TO 'user'@'%';
+
+GRANT ALL PRIVILEGES ON *.* TO 'user'@'localhost';
+
+GRANT ALL PRIVILEGES ON *.* TO 'user'@'ip_address';
+
+GRANT ALL PRIVILEGES ON database.* TO 'user'@'yourremotehost'IDENTIFIED BY 'newpassword';
+
+GRANT SELECT,UPDATE,INSERT,ALTER ON databasename.* TO 'User'@'yourremotehost' IDENTIFIED BY 'newpassword';
+
+GRANT ALL PRIVILEGES ON samast.* TO 'user'@'ip_address'; (to give access on samast database)
+
+GRANT ALL PRIVILEGES ON *.* TO 'jalaj'@'%'
+SHOW GRANTS FOR 'jalaj'@'%';
+
+CREATE USER 'user'@'ip_address' IDENTIFIED BY 'Admin@1212';
+
+CREATE USER 'adarsh'@'14.99.243.138' IDENTIFIED BY 'Adarsh@1212';
+
+GRANT ALL PRIVILEGES ON epm.* TO 'adarsh'@'14.99.243.138';
+
+use admin;
+
+>db.createUser(
+{
+user: "arpit1",
+pwd: "Arpit1@1212",
+roles: [ "readWrite" ]
+}
+);
+
+
+db.getUsers();
+
+
+db.createUser(
+{
+user: "sneha",
+pwd: "Sneha@1212",
+roles: [ "read" ]
+}
+);
+
+db.createUser(
+{
+user: "adarsh",
+pwd: "Adarsh@1212",
+roles: [ "readWrite" ]
+}
+);
+
+db.createUser(
+{
+user: "adarsh",
+pwd: "Adarsh@1212",
+roles: [ "readWrite" ]
+}
+);
+
+
+db.createUser(
+{
+user: "vijay",
+pwd: "Vijay@1212",
+roles: [ "readWrite" ]
+}
+);
+
+
+
+
+
+
+
+CREATE USER 'user'@'ip_address' IDENTIFIED BY 'Admin@1212';
+
+CREATE USER 'user'@'%' IDENTIFIED BY 'Admin@1212';
+
+GRANT ALL PRIVILEGES ON *.* TO 'sumanta'@'%';
+
+** Add the ip in IP tables and restart.
+
+GRANT ALL PRIVILEGES ON *.* TO 'user'@'%';
+
+GRANT ALL PRIVILEGES ON *.* TO 'user'@'localhost';
+
+GRANT ALL PRIVILEGES ON *.* TO 'user'@'ip_address';
+
+GRANT ALL PRIVILEGES ON database.* TO 'user'@'yourremotehost'IDENTIFIED BY 'newpassword';
+
+GRANT SELECT,UPDATE,INSERT,ALTER ON databasename.* TO 'User'@'yourremotehost' IDENTIFIED BY 'newpassword';
+
+GRANT ALL PRIVILEGES ON samast.* TO 'user'@'ip_address'; (to give access on samast database)
+
+
+
+
+find . -type f -mtime +90 -exec mv "{}" /home/kafka/Archive-Sync-History/ \; 
+
+
+SELECT user FROM mysql.user;
+show databases;
+use 50hzauth;
+
+delete from mysql.user where user='vijay';
+
+ drop user 'vijay'@'14.99.243.138';
+GRANT SELECT,INSERT,UPDATE,ALTER ON hea.* TO 'vijay'@'14.99.243.138';
+GRANT SELECT ON samast.* TO 'dipu'@'118.185.255.98';
+GRANT ALL PRIVILEGES ON 50hzauth.* TO 'anuj'@'182.76.9.122'
+SHOW GRANTS FOR 'vijay'@'14.99.243.138';
+SHOW GRANTS FOR 'adarsh'@'14.99.243.138';
+GRANT ALL PRIVILEGES ON samast.* TO 'vijay'@'%';
+
+GRANT ALL PRIVILEGES ON *.* TO 'adarsh'@'14.99.243.138'             
+GRANT SELECT, INSERT, UPDATE ON `epm`.* TO 'adarsh'@'14.99.243.138';
+
+GRANT ALL PRIVILEGES ON hawa_new.* TO 'abhishek'@'14.99.243.138';
+GRANT ALL PRIVILEGES ON spfs.* TO 'abhishek'@'14.99.243.138';
+GRANT SELECT,INSERT,UPDATE,ALTER ON spfs.* TO 'abhishek'@'14.99.243.138';
+SHOW GRANTS FOR 'dipu'@'14.99.243.138';
+
+flush privileges;
+
+hawa_new
+spfs
+
+50hzauth
+epm
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------>>>
+
+
+samast-prod-
+mysql/mongo 192.168.101.19
+
+
+-------------------------------------
+
+SELECT user FROM mysql.user;
+delete from mysql.user where user='vijay';
+delete from mysql.user where user='arpit';
+
+CREATE USER 'adarsh'@'172.16.0.66' IDENTIFIED BY 'Adarsh@1212';
+GRANT SELECT ON oms_db_prod_latest.* TO 'abhishek'@'14.99.243.138';
+SHOW GRANTS FOR 'abhishek'@'14.99.243.138';
+REVOKE ALTER ON sunny FROM 'samast'@'14.99.243.138';
+REVOKE ALL PRIVILEGES ON samast.* FROM 'vijay'@'';
+
+flush privileges;
+GRANT ALL PRIVILEGES ON epm.* TO 'ravinder'@'14.99.243.138';
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+CREATE USER 'chetan'@'%' identified by 'Chetan@1212' PASSWORD EXPIRE PASSWORD EXPIRE INTERVAL 1 DAY; 
+
+
+
+
+
+
+
+
+
+
+SELECT user FROM mysql.user;
+
+CREATE USER 'jawahar'@'%' IDENTIFIED BY 'Jawahar@1212';
+GRANT SELECT ON samast.* TO 'jawahar'@'%';
+flush privileges;
+SHOW GRANTS FOR 'jawahar'@'14.99.243.138';
+SHOW GRANTS FOR 'jawahar'@'%';
+drop user 'jawahar2'@'14.99.243.138';
+
+
+----> For Procedure Access
+
+CREATE USER 'ravinder'@'14.99.243.138' IDENTIFIED BY 'Ravinder@1212';
+
+GRANT SELECT, INSERT, UPDATE, DELETE, CREATE, RELOAD, SHUTDOWN, PROCESS, FILE, REFERENCES, INDEX, ALTER, SHOW DATABASES, SUPER, CREATE TEMPORARY TABLES, LOCK TABLES, EXECUTE, CREATE VIEW, SHOW VIEW, CREATE ROUTINE, ALTER ROUTINE, CREATE USER, EVENT, TRIGGER, CREATE TABLESPACE ON epm.* TO '@'14.99.243.138';
+
+
+
+
+GRANT SELECT, INSERT, UPDATE, CREATE, RELOAD, SHUTDOWN, PROCESS, FILE, REFERENCES, INDEX, ALTER, SHOW DATABASES, SUPER, CREATE TEMPORARY TABLES, LOCK TABLES, EXECUTE, CREATE VIEW, SHOW VIEW, CREATE ROUTINE, ALTER ROUTINE, CREATE USER, EVENT, TRIGGER, CREATE TABLESPACE ON epm.* TO 'ravinder'@'14.99.243.138';
+
+SHOW GRANTS FOR 'ravinder'@'14.99.243.138';
+
+SHOW GRANTS FOR 'mohit'@'118.185.255.98';
+
+SHOW GRANTS FOR 'ravindra'@'182.76.9.122';
+
+GRANT ALL PRIVILEGES ON epm.* TO 'mohit'@'14.99.243.138';
+
+SHOW GRANTS FOR 'vikram'@'172.16.4.97';
+
+
+
+
+
+
+
+
+| Grants for mohit@118.185.255.98                                     |
++---------------------------------------------------------------------+
+| GRANT USAGE ON *.* TO 'mohit'@'118.185.255.98'                      |
+| GRANT SELECT, INSERT, UPDATE ON `epm`.* TO 'mohit'@'118.185.255.98' |
++---------------------------------------------------------------------+
+mysql: [Warning] Using a password on the command line interface can be insecure.
++---------------------------------------------------------------------+
+| Grants for mohit@192.168.51.110                                     |
++---------------------------------------------------------------------+
+| GRANT USAGE ON *.* TO 'mohit'@'192.168.51.110'                      |
+| GRANT SELECT, INSERT, UPDATE ON `epm`.* TO 'mohit'@'192.168.51.110' |
++---------------------------------------------------------------------+
+mysql: [Warning] Using a password on the command line interface can be insecure.
++--------------------------------------------------------------------+
+| Grants for mohit@14.99.243.138                                     |
++--------------------------------------------------------------------+
+| GRANT USAGE ON *.* TO 'mohit'@'14.99.243.138'                      |
+| GRANT SELECT, INSERT, UPDATE ON `epm`.* TO 'mohit'@'14.99.243.138' |
++--------------------------------------------------------------------+
+mysql: [Warning] Using a password on the command line interface can be insecure.
++-------------------------------------------------------------------+
+| Grants for mohit@182.76.9.122                                     |
++-------------------------------------------------------------------+
+| GRANT USAGE ON *.* TO 'mohit'@'182.76.9.122'                      |
+| GRANT SELECT, INSERT, UPDATE ON `epm`.* TO 'mohit'@'182.76.9.122' |
++-------------------------------------------------------------------+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
