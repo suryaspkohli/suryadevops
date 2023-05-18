@@ -1,0 +1,23 @@
+ 
+ aws --version
+ ls -l /usr/local/bin/aws
+ aws s3 ls
+ mkdir .aws/
+ cd .aws/
+ vim config
+ vim credentials
+ ll
+ chmod 600 c*
+ ll
+ aws s3 ls s3://50hertzftparchives3/wind/
+ aws s3 ls s3://50hertzftparchives3/
+ aws s3 ls s3://50hertz-database-bkp/
+ aws s3 ls s3://50hertz-database-bkp/EPM/
+ cd /DB/
+ ls
+ ls -l epm26Apr202315\:32\:57.sql.gz 
+ ls -lrth epm26Apr202315\:32\:57.sql.gz 
+ aws s3 cp "epm26Apr202315:32:57.sql.gz" s3://50hertz-database-bkp/EPM/
+ aws s3 ls s3://50hertz-database-bkp/EPM/
+
+
