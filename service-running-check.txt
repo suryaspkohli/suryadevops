@@ -1,0 +1,24 @@
+
+#!/bin/bash
+var1=13.126.148.5
+var2=EPM-APP
+var3=Prod
+var5=$var1,$var2,$var3
+rm -rf /root/script/service_log/"$var1".csv
+
+for var4 in {'ALERT-parser-1.11-SNAPSHOT.jar','SCHEDULAR-3','HEA-SCHEDULAR','apache-activemq-5.15.3','vsftpd','nginx','nfs','Rserve'}
+
+do 
+
+ps -ef | grep $var4 | grep -v grep > /dev/null
+
+if [ $? = 0 ]; then
+echo "$var5,$var4,Running" >> /root/script/service_log/"$var1".csv
+
+else 
+echo "$var5,$var4,Stopped" >> /root/script/service_log/"$var1".csv
+
+fi 
+
+done
+
