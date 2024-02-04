@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>I Miss You, Muskan</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      text-align: center;
+      background-color: #f0f0f0;
+      overflow: hidden;
+      margin: 0;
+    }
+
+    .message {
+      font-size: 24px;
+      color: #333;
+      margin: 20px;
+      opacity: 0;
+      animation: fadeIn 2s forwards;
+      position: relative;
+    }
+
+    .emoji {
+      font-size: 30px;
+      margin: 10px;
+    }
+
+    .sparkle {
+      display: inline-block;
+      animation: sparkle 1s infinite alternate;
+      color: #ffcc00;
+    }
+
+    .heart {
+      color: #ff66b2;
+      font-size: 24px;
+    }
+
+    @keyframes sparkle {
+      to {
+        color: #ff9900;
+      }
+    }
+
+    @keyframes fadeIn {
+      to {
+        opacity: 1;
+      }
+    }
+
+    /* Snowfall Effect */
+    .snowfall {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+    }
+
+    .snowflake {
+      position: absolute;
+      width: 5px;
+      height: 5px;
+      background-color: #fff;
+      clip-path: polygon(0 0, 100% 0, 50% 100%);
+      animation: snowfall linear infinite;
+      pointer-events: none;
+    }
+
+    @keyframes snowfall {
+      to {
+        transform: translateY(100vh);
+      }
+    }
+
+    /* Ensure snowflakes start at random positions */
+    @keyframes snowfall-start {
+      from {
+        transform: translateY(-5vh) translateX(calc(100vw * random()));
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="message">
+    <p class="animated-text">Bahane bahane se aapki baat karte hai</p>
+    <p class="animated-text">Har pal aapko mehsus karte hai</p>
+    <p class="animated-text">Itni baar to aap saans bhi nahi lete honge</p>
+    <p class="animated-text">Jitni baar hum aapko yaad karte hai! <span class="sparkle">&#10024;</span> <span class="heart">&#10084;</span></p>
+    <p class="animated-text"><span style="color: #ff66b2;">I miss you, Muskan</span>! &#128522;</p>
+  </div>
+
+  <!-- Snowfall Elements -->
+  <div class="snowfall">
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        const container = document.querySelector('.snowfall');
+        const numberOfSnowflakes = 300; // Increased the number of snowflakes
+
+        for (let i = 0; i < numberOfSnowflakes; i++) {
+          createSnowflake();
+        }
+
+        function createSnowflake() {
+          const snowflake = document.createElement('div');
+          snowflake.className = 'snowflake';
+          snowflake.style.left = Math.random() * 100 + 'vw';
+          snowflake.style.animationDuration = Math.random() * 3 + 2 + 's';
+          snowflake.style.animationDelay = -Math.random() * 5 + 's';
+          container.appendChild(snowflake);
+
+          snowflake.addEventListener('animationiteration', () => {
+            snowflake.style.left = Math.random() * 100 + 'vw';
+            snowflake.style.animationDuration = Math.random() * 3 + 2 + 's';
+            snowflake.style.animationDelay = -Math.random() * 5 + 's';
+          });
+        }
+      });
+    </script>
+  </div>
+</body>
+
+</html>
+
